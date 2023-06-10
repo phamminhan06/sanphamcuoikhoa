@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Form Đăng ký</title>
+  <!-- Bao gồm các thư viện Bootstrap -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css
+  ">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js
+  "></script>
+  <!-- Bao gồm thư viện Firebase -->
+  <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-firestore.js"></script>
+</head>
+
+<body>
+  <div style="width: 500px;" class="mx-auto mt-5">
+    <div class="container">
+      <h2>Form Đăng ký</h2>
+      <form id="signup-form">
+        <div class="form-group my-2">
+          <label for="email">Email:</label>
+          <input type="email" class="form-control" id="email" required>
+        </div>
+        <div class="form-group my-2">
+          <label for="phone">Số điện thoại:</label>
+          <input type="tel" class="form-control" id="phone" required>
+        </div>
+        <div class="form-group my-2">
+          <label for="password">Mật khẩu:</label>
+          <input type="password" class="form-control" id="password" required>
+        </div>
+        <div class="form-group my-2">
+          <label for="address">Địa chỉ giao hàng:</label>
+          <input type="text" class="form-control" id="address" required>
+        </div>
+        <button type="submit" class="btn btn-primary">Đăng ký</button>
+      </form>
+    </div>
+  </div>
+
+  <script>
+    // Cấu hình thông tin Firebase
+    var firebaseConfig = {
+      apiKey: "AIzaSyDQ7hn9EBrtmlIbav6qSMDMnHfYp--Nf0o",
+  authDomain: "spck-1ea9b.firebaseapp.com",
+  projectId: "spck-1ea9b",
+  storageBucket: "spck-1ea9b.appspot.com",
+  messagingSenderId: "643383406890",
+  appId: "1:643383406890:web:f1faeb9d73b1a328116e53"
+    };
+
+    // Khởi tạo Firebase
+    firebase.initializeApp(firebaseConfig);
+    db = firebase.firestore()
+  </script>
+  <script src="./register.js"></script>
+</body>
+
+</html>

@@ -14,73 +14,72 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-sm navbar-light bg-light">
-        <div class="container">
-            <a class="navbar-brand" href="/day3/index.html">
-                <img style="width: 60px;" src="https://www.freeiconspng.com/uploads/pizza-icon-5.png" alt="">
-                PZA
-            </a>
-            <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse"
-                data-bs-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="collapsibleNavId">
-                <ul class="navbar-nav me-auto mt-2 mt-lg-0">
-                    <div class="dropdown">
-                        <a class="btn btn-secondary dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                          Pizza
-                        </a>
-                      
-                        <ul class="dropdown-menu">
-                          <li><a class="dropdown-item" href="#">Hải sản & thập cẩm</a></li>
-                          <li><a class="dropdown-item" href="#">Truyền thống & khai vị</a></li>
-                          <li><a class="dropdown-item" href="#">Thức uống</a></li>
-                        </ul>
-                      </div>
-                    <li class="nav-item">
-                        <div class="d-grid gap-2">
-                            <a class="btn btn-primary" href="/day3/signup.html" role="button">Đăng ký</a>
-                        </div>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Đăng nhập</a>
-                    </li>
-                </ul>
-                <form class="d-flex my-2 my-lg-0">
-                    <input class="form-control me-sm-2" type="text" placeholder="Tìm kiếm">
-                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
-                        <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
-                      </svg></button>
-                </form>
-            </div>
+  <nav class="navbar navbar-expand-sm navbar-light bg-light">
+    <div class="container">
+        <a class="navbar-brand" href="/day3/index.html">
+            <img style="width: 60px;" src="https://www.freeiconspng.com/uploads/pizza-icon-5.png" alt="">
+            PZA
+        </a>
+        <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse"
+            data-bs-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavId">
+            <ul class="navbar-nav me-auto mt-2 mt-lg-0">
+                <div class="dropdown">
+                    <a class="btn btn-secondary dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Thực đơn
+                    </a>
+                  
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Hải sản & thập cẩm</a></li>
+                      <li><a class="dropdown-item" href="#">Truyền thống & khai vị</a></li>
+                      <li><a class="dropdown-item" href="#">Thức uống</a></li>
+                    </ul>
+                  </div>
+                <li class="nav-item">
+                    <div class="d-grid gap-2 px-2">
+                        <a class="btn btn-primary" href="/day3/signup.html" role="button">Đăng ký</a>
+                    </div>
+                </li>
+            </ul>
+            <form class="d-flex my-2 my-lg-0">
+                <input class="form-control me-sm-2" type="text" placeholder="Tìm kiếm">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                    <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                  </svg></button>
+            </form>
         </div>
-    </nav>
+    </div>
+</nav>
     <br>
     <div class="signup-input">
+      <form id="signup-form"></form>
       <div class="input-group mb-3">
-        <span class="input-group-text" id="addon-wrapping"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person" viewBox="0 0 16 16">
-          <path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6Zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0Zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4Zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10Z"/>
+        <span class="input-group-text" id="addon-wrapping"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-telephone" viewBox="0 0 16 16">
+          <path d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.482 8.062a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"/>
         </svg></span>
-        <input type="text" class="form-control" placeholder="Họ tên người dùng" aria-label="Username" aria-describedby="addon-wrapping">
+        <input type="text" class="form-control" placeholder="Số điện thoại" id="phone" aria-label="Username" aria-describedby="addon-wrapping" required>
       </div>
       <div class="input-group mb-3">
         <span class="input-group-text" id="addon-wrapping">@</span>
-        <input type="text" class="form-control" placeholder="Email" aria-label="Username" aria-describedby="addon-wrapping">
+        <input type="text" class="form-control" placeholder="Email" id="email" aria-label="Username" aria-describedby="addon-wrapping" required>
       </div>
       <div class="input-group mb-3">
         <span class="input-group-text" id="addon-wrapping"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-lock" viewBox="0 0 16 16">
           <path d="M8 1a2 2 0 0 1 2 2v4H6V3a2 2 0 0 1 2-2zm3 6V3a3 3 0 0 0-6 0v4a2 2 0 0 0-2 2v5a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2zM5 8h6a1 1 0 0 1 1 1v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V9a1 1 0 0 1 1-1z"/>
         </svg></span>
-        <input type="text" class="form-control" placeholder="Mật khẩu" aria-label="Username" aria-describedby="addon-wrapping">
+        <input type="text" class="form-control" placeholder="Mật khẩu" id="password" aria-label="Username" aria-describedby="addon-wrapping" required>
       </div>
       <div class="input-group mb-3">
-        <span class="input-group-text" id="addon-wrapping"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-lock" viewBox="0 0 16 16">
-          <path d="M8 1a2 2 0 0 1 2 2v4H6V3a2 2 0 0 1 2-2zm3 6V3a3 3 0 0 0-6 0v4a2 2 0 0 0-2 2v5a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2zM5 8h6a1 1 0 0 1 1 1v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V9a1 1 0 0 1 1-1z"/>
+        <span class="input-group-text" id="addon-wrapping"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
+          <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"/>
         </svg></span>
-        <input type="text" class="form-control" placeholder="Nhập lại mật khẩu" aria-label="Username" aria-describedby="addon-wrapping">
+        <input type="text" class="form-control" placeholder="Địa chỉ" id="address" aria-label="Username" aria-describedby="addon-wrapping" required>
       </div>
       <a href="index.html"><button type="button" class="btn btn-info">Đăng ký</button></a>
+    </form>
     </div>
 
   <!-- Bootstrap JavaScript Libraries -->
@@ -91,6 +90,23 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
     integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
   </script>
+
+<script>
+  // Cấu hình thông tin Firebase
+  var firebaseConfig = {
+    apiKey: "AIzaSyDQ7hn9EBrtmlIbav6qSMDMnHfYp--Nf0o",
+  authDomain: "spck-1ea9b.firebaseapp.com",
+  projectId: "spck-1ea9b",
+  storageBucket: "spck-1ea9b.appspot.com",
+  messagingSenderId: "643383406890",
+  appId: "1:643383406890:web:f1faeb9d73b1a328116e53"
+  };
+
+  // Khởi tạo Firebase
+  firebase.initializeApp(firebaseConfig);
+  db = firebase.firestore()
+</script>
+<script src="/day3/signin.js"></script>
 </body>
 
 </html>
