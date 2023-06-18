@@ -1,6 +1,4 @@
-console.log(123);
 document.getElementById("signup-form").addEventListener("submit", function (e) {
-  console.log(222);
   e.preventDefault();
 
   const email = document.getElementById("email").value;
@@ -20,10 +18,10 @@ document.getElementById("signup-form").addEventListener("submit", function (e) {
     .createUserWithEmailAndPassword(user.email, user.password)
     .then(function (response) {
       Swal.fire({
-        title: "Success!",
+        title: "Thành công!",
         text: "Đăng ký thành công",
         html: `
-         <a class="btn btn-primary" href="/day3/login.html" role="button">Đăng nhập</a>
+         <a class="btn btn-primary" href="/day3/index.html" role="button">OK</a>
         `,
         icon: "success",
         showConfirmButton: false,
@@ -36,7 +34,7 @@ document.getElementById("signup-form").addEventListener("submit", function (e) {
     })
     .catch(function (error) {
       Swal.fire({
-        title: "Error!",
+        title: "Lỗi!",
         text: error.message,
         icon: "error",
       });
