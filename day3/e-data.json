@@ -1,11 +1,13 @@
 [
   {
+    "id": 1,
     "name": "Pizza phô mai",
     "img": "https://cdn.pizzahut.vn/images/Web_V3/Products/Pizza_Pho_Mai_Cao_Cap_400x275.jpg",
     "salePrice": 79000,
     "price": 89000
   },
   {
+    "id": 2,
     "name": "Pizza hải sản nhiệt đới",
     "img": "https://cdn.pizzahut.vn/images/Web_V3/Products/Pizza_Hai_San_Nhiet_Doi_400x275.jpg",
     "salePrice": 119000,
@@ -13,48 +15,56 @@
     "desc": "Khi biển cả được thu gọn trong một chiếc pizza với đầy ắp tôm, thanh cua, xen lẫn cà chua, bắp, thơm"
   },
   {
+    "id": 3,
     "name": "Pizza thịt và xúc xích",
     "img": "https://cdn.pizzahut.vn/images/Web_V3/Products/Pizza_Thit_Va_Xuc_Xich_400x275.jpg",
     "salePrice": 99000,
     "price": 119000
   },
   {
+    "id": 4,
     "name": "Pizza Pepperoni",
     "img": "https://cdn.pizzahut.vn/images/Web_V3/Products/Pizza_Xuc_Xich_Nuong_400x275.jpg",
     "salePrice": 99000,
     "price": 119000
   },
   {
+    "id": 5,
     "name": "Pizza Hawaiian",
     "img": "https://cdn.pizzahut.vn/images/Web_V3/Products/Pizza_Hawaiian_400x275.jpg",
     "salePrice": 109000,
     "price": 119000
   },
   {
+    "id": 6,
     "name": "Pizza cá ngừ",
     "img": "https://cdn.pizzahut.vn/images/Web_V3/Products/Pizza_Ca_Ngu_400x275.jpg",
     "salePrice": 109000,
     "price": 129000
   },
   {
+    "id": 7,
     "name": "Pizza thập cẩm",
     "img": "https://cdn.pizzahut.vn/images/Web_V3/Products/Pizza_Thap_Cam_400x275.jpg",
     "salePrice": 119000,
     "price": 129000
   },
   {
+    "id": 8,
     "name": "Cơm chiên hải sản",
     "img": "https://cdn.pizzahut.vn/images/Web_V3/Products/Com_Chien_Hai_San_400x275.jpg",
     "salePrice": 89000,
     "price": 99000
   },
   {
+    "id": 9,
     "name": "Mỳ ý bò bằm sốt cà chua",
     "img": "https://cdn.pizzahut.vn/images/Web_V3/Products/Mi_Y_Thit_Bam_Xot_Ca_Chua_400x275.jpg",
     "salePrice": 109000,
     "price": 120000
   },
   {
+    "id": 10,
     "name": "Mỳ ý hải sản sốt cà chua",
     "img": "https://cdn.pizzahut.vn/images/Web_V3/Products/Mi_Y_Hai_San_Xot_Ca_Chua_400x275.jpg",
     "salePrice": 120000,
