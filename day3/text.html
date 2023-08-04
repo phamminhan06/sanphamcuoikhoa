@@ -1,0 +1,17 @@
+<div class="cart-item d-flex my-5">
+    <div>
+        <img class="me-3" src="${cartItem.img}" alt="" style="width: 120px; height: 120px; border-radius: 8px" />
+        <p class="text-danger text-center" onClick="removeItem(${index})"> Xóa </p>
+    </div>
+    <div class="">
+        <h4>${cartItem.name}</h4>
+
+        <small class="text-primary">
+            ${formatVNDCurrency(cartItem.salePrice)}
+        </small>
+        <br>
+        <small class="text-decoration-line-through">
+            ${formatVNDCurrency(cartItem.price)}
+        </small>
+    </div>
+</div>

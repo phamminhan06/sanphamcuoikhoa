@@ -19,8 +19,6 @@
         integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-    <link rel="stylesheet" href="style.css">
-
 </head>
 
 <body class="d-flex flex-column" style="min-height: 100vh;">
@@ -35,16 +33,6 @@
                     <a href="pizzapage.html"><button class="btn btn-dark" type="button">
                             Xem thực đơn
                         </button></a>
-                    <li class="nav-item">
-                        <div class="d-grid gap-2 px-2">
-                            <a class="btn btn-primary" href="/day3/signup.html" role="button">Đăng ký</a>
-                        </div>
-                    </li>
-                    <li class="nav-item">
-                        <div class="d-grid gap-2 px-2">
-                            <a class="btn btn-secondary" href="/day3/login.html" role="button">Đăng nhập</a>
-                        </div>
-                    </li>
                 </ul>
                 <button class="btn btn-outline-light position-relative" data-bs-toggle="offcanvas"
                     data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">🛒
@@ -109,7 +97,7 @@
                 <span class="fw-bold">Tổng tiền: </span>
                 <span id="total-money">0</span>
             </div>
-            <button class="btn btn-primary w-100">
+            <button class="btn btn-primary w-100" onclick="order()">
                 <span>💳 Đặt hàng</span>
             </button>
         </div>

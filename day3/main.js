@@ -18,7 +18,10 @@ const calcBill = (productPickedList) => {
 
 calcBill(productPickedList);
 const removeItem = (index) => {
-  console.log(index);
+  productPickedList.splice(index, 1);
+  localStorage.setItem("an_cart", JSON.stringify(productPickedList));
+  renderCart(productPickedList);
+  calcBill(productPickedList);
 };
 document.getElementById("count-products").innerHTML = productPickedList.length;
 const renderCart = (myCart) => {
@@ -29,28 +32,25 @@ const renderCart = (myCart) => {
     let htmlString = "";
     myCart.map((cartItem, index) => {
       htmlString += `
-        <div class="cart-item d-flex my-5">
+      <div class="cart-item d-flex my-5">
         <div>
-          <img
-            class="me-3"
-            src="${cartItem.img}"
-            alt=""
-            style="width: 120px; height: 120px; border-radius: 8px"
-          /> 
-          <p class="text-danger text-center" onClick="removeItem(${index})>Xóa</p>
+            <img class="me-3" src="${
+              cartItem.img
+            }" alt="" style="width: 120px; height: 120px; border-radius: 8px" />
+            <p class="text-danger text-center" onClick="removeItem(${index})"> Xóa </p>
         </div>
-          <div class="">
+        <div class="">
             <h4>${cartItem.name}</h4>
-            
+
             <small class="text-primary">
-              ${formatVNDCurrency(cartItem.salePrice)}
+                ${formatVNDCurrency(cartItem.salePrice)}
             </small>
-            <div class=""></div>
+            <br>
             <small class="text-decoration-line-through">
-              ${formatVNDCurrency(cartItem.price)}
+                ${formatVNDCurrency(cartItem.price)}
             </small>
-          </div>
         </div>
+      </div>
       `;
     });
     document.getElementById("cart-body").innerHTML = htmlString;
@@ -58,7 +58,6 @@ const renderCart = (myCart) => {
     // gio hang rong
     document.getElementById("cart-body").innerHTML = `
     <div class="flex-fill">
-      <img src="/day3/cart-cross-svgrepo-com.svg" alt="" />
       <p class="text-center">Chưa có sản phẩm nào bên trong giỏ hàng</p>
     </div> 
   `;
@@ -76,6 +75,35 @@ const addToCart = (id) => {
 
   renderCart(newData);
   calcBill(productPickedList);
+};
+
+const order = () => {
+  const address = localStorage.getItem("address");
+  if (productPickedList.length > 0) {
+    localStorage.removeItem("doan_cart");
+    renderCart([]);
+    calcBill([]);
+    Swal.fire({
+      title: "Success!",
+      text: "Đặt hàng thành công",
+      html: `
+          Đơn hàng của bạn sẽ được giao tới địa ${address}
+        `,
+      icon: "success",
+      showConfirmButton: false,
+    });
+    document.getElementById("count-products").innerHTML = 0;
+  } else {
+    Swal.fire({
+      title: "Lỗi!",
+      text: "Đặt hàng thất bại",
+      html: `
+          Giỏ hàng của bạn trống không
+        `,
+      icon: "error",
+      showConfirmButton: false,
+    });
+  }
 };
 
 fetch("https://649ed17b245f077f3e9cf187.mockapi.io/products")

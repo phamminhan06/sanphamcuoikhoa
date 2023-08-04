@@ -14,7 +14,18 @@ document.getElementById("login-form").addEventListener("submit", function (e) {
     .auth()
     .signInWithEmailAndPassword(user.email, user.password)
     .then(function (response) {
-      window.location.href = "index.html";
+      console.log(response);
+      db.collection("users")
+        .where("email", "==", user.email)
+        .get()
+        .then((snapshot) => {
+          snapshot.docs.map((item) => {
+            // chuyển về data
+            const user = item.data();
+
+            localStorage.setItem("address", JSON.stringify(user.address));
+          });
+        });
     })
     .catch(function (error) {
       Swal.fire({

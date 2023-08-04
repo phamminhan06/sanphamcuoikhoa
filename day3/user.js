@@ -17,6 +17,7 @@ document.getElementById("signup-form").addEventListener("submit", function (e) {
     .auth()
     .createUserWithEmailAndPassword(user.email, user.password)
     .then(function (response) {
+      console.log(response);
       Swal.fire({
         title: "Thành công!",
         text: "Đăng ký thành công",
