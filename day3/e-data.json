@@ -69,5 +69,19 @@
     "img": "https://cdn.pizzahut.vn/images/Web_V3/Products/Mi_Y_Hai_San_Xot_Ca_Chua_400x275.jpg",
     "salePrice": 120000,
     "price": 130000
+  },
+  {
+    "id": 11,
+    "name": "Pepsi chai 1.5L",
+    "img": "https://cdn.pizzahut.vn/images/Web_V3/Products/Pepsi_1.5L_400x275.jpg",
+    "salePrice": 40000,
+    "price": 45000
+  },
+  {
+    "id": 12,
+    "name": "Pepsi lon 320ml",
+    "img": "https://cdn.pizzahut.vn/images/Web_V3/Products/Pepsi_Can_400x275.jpg",
+    "salePrice": 30000,
+    "price": 40000
   }
 ]

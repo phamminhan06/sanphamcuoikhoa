@@ -106,6 +106,17 @@ const order = () => {
   }
 };
 
+const logout = () => {
+  Swal.fire({
+    title: "Đăng xuất?",
+    text: "Bạn chắc chứ",
+    html: `
+         <a class="btn btn-primary" href="/day3/signup.html" role="button">OK</a>
+        `,
+    showConfirmButton: false,
+  });
+};
+
 fetch("https://649ed17b245f077f3e9cf187.mockapi.io/products")
   .then(function (res) {
     return res.json();
