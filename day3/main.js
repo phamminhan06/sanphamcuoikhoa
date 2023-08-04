@@ -20,8 +20,11 @@ calcBill(productPickedList);
 const removeItem = (index) => {
   productPickedList.splice(index, 1);
   localStorage.setItem("an_cart", JSON.stringify(productPickedList));
-  renderCart(productPickedList);
+
   calcBill(productPickedList);
+  const newData = JSON.parse(localStorage.getItem("an_cart")) || [];
+  document.getElementById("count-products").innerHTML = newData.length;
+  renderCart(newData);
 };
 document.getElementById("count-products").innerHTML = productPickedList.length;
 const renderCart = (myCart) => {
@@ -79,7 +82,8 @@ const addToCart = (id) => {
 
 const order = () => {
   const address = localStorage.getItem("address");
-  if (productPickedList.length > 0) {
+  const newData = JSON.parse(localStorage.getItem("an_cart")) || [];
+  if (newData.length > 0) {
     localStorage.removeItem("an_cart");
     renderCart([]);
     calcBill([]);
