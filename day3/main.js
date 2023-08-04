@@ -112,7 +112,7 @@ const order = () => {
 
 const logout = () => {
   Swal.fire({
-    title: "Đăng xuất?",
+    title: "Bạn muốn đăng xuất?",
     text: "Bạn chắc chứ",
     html: `
          <a class="btn btn-primary" href="/day3/signup.html" role="button">OK</a>
