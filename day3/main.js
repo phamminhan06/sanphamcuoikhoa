@@ -80,7 +80,7 @@ const addToCart = (id) => {
 const order = () => {
   const address = localStorage.getItem("address");
   if (productPickedList.length > 0) {
-    localStorage.removeItem("doan_cart");
+    localStorage.removeItem("an_cart");
     renderCart([]);
     calcBill([]);
     Swal.fire({
